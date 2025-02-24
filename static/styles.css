@@ -40,8 +40,8 @@ body {
 
 /* Main Dashboard */
 .dashboard {
-    flex: 1;
-    padding: 20px;
+    display: block;
+    margin-left: 250px;
 }
 
 /* Sections */
