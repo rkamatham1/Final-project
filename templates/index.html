@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoJobs Insights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h2>GeoJobs</h2>
+            <ul>
+                <li><a href="#">🏠 Home</a></li>
+                <li><a href="#">📍 Job Insights</a></li>
+                <li><a href="#">💰 Salary Trends</a></li>
+                <li><a href="#">🏢 Employers</a></li>
+                <li><a href="#">⚙️ Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="dashboard">
+            <header>
+                <h1>Job Insights Dashboard</h1>
+            </header>
+
+            <section class="job-heatmap">
+                <h2>Interactive Job Heatmap</h2>
+                <div class="map-container">[Map Placeholder]</div>
+            </section>
+
+            <section class="filters">
+                <h3>Filters</h3>
+                <label for="job-title">Job Title:</label>
+                <select id="job-title">
+                    <option>Software Engineer</option>
+                    <option>Data Scientist</option>
+                </select>
+
+                <label for="visa-type">Visa Type:</label>
+                <select id="visa-type">
+                    <option>OPT</option>
+                    <option>CPT</option>
+                </select>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="Enter city/state">
+            </section>
+
+            <section class="salary-trends">
+                <h2>Salary Trends</h2>
+                <div class="graph-placeholder">[Graph Placeholder]</div>
+            </section>
+
+            <section class="employer-profiles">
+                <h2>Top Employers</h2>
+                <div class="employer-list">
+                    <div class="employer-card">Company A</div>
+                    <div class="employer-card">Company B</div>
+                    <div class="employer-card">Company C</div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 
